@@ -3,7 +3,7 @@ RUN apk add --no-cache openssl bash mysql-client
 RUN docker-php-ext-install pdo pdo_mysql
 
 # antes de rodar o docker-compose up -d
-# no terminal dar permi para o storage
+# no terminal dar permissão para a pasta storage
 # chmod -R 755 storage
 
 WORKDIR /var/www
